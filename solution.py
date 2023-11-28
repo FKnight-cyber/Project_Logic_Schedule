@@ -12,7 +12,7 @@ def schedule_courses(k, m, pairs):
     # Cada minicurso deve ser ofertado em no m ́aximo um slot.
     at_most_one_slot = [Sum([If(courses[i * m + j], 1, 0) for j in range(m)]) <= 1 for i in range(k)]
 
-# Minicursos com inscriçõoles em comum não podem ser ofertados no mesmo slot.
+# Minicursos com inscrições em comum não podem ser ofertados no mesmo slot.
     no_common_registrations = [Not(And(courses[(x - 1) * m + i], courses[(y - 1) * m + i]))
                                for (x, y) in pairs for i in range(m)]
 
