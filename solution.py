@@ -42,3 +42,27 @@ m = 3
 pairs = [(1, 2), (2, 3), (2, 4), (3, 4)]
 
 schedule_courses(k, m, pairs)
+
+print("\n------------\n")
+
+k2 = 8
+m2 = 4
+pairs2 = [(1, 2), (2, 3), (2, 4), (3, 4), (5, 6), (6, 7), (7, 8), (8, 5)]
+
+schedule_courses(k2, m2, pairs2)
+
+print("\n------------\n")
+
+k3 = 4
+m3 = 2
+pairs3 = [(1, 2), (2, 3), (3, 4)]
+
+schedule_courses(k3, m3, pairs3)
+
+print("\n------------\n")
+
+k4 = 4
+m4 = 1
+pairs4 = [(1, 2), (2, 3), (3, 4), (4, 1)]
+
+schedule_courses(k4, m4, pairs4)
